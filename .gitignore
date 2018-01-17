@@ -1,0 +1,11 @@
+.settings/ 
+target/
+.gradle/
+bin/
+
+.classpath 
+.project
+
+# Java class files
+*.class
+*.jar
