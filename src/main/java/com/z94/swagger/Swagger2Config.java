@@ -41,7 +41,7 @@ public class Swagger2Config {
     private String basePackage;
     
     /**
-     * FIXME 方法注释信息(此标记由Eclipse自动生成,请填写注释信息删除此标记)
+     * 创建Docket的Bean
      *
      * @return Docket
      */
@@ -52,12 +52,11 @@ public class Swagger2Config {
     }
     
     /**
-     * FIXME 方法注释信息(此标记由Eclipse自动生成,请填写注释信息删除此标记)
+     * 创建该Api的基本信息
      *
      * @return ApiInfo
      */
-    @Bean
-    public ApiInfo apiInfo() {
+    private ApiInfo apiInfo() {
         
         return new ApiInfoBuilder().title(title).description(description).version(version).build();
     }
