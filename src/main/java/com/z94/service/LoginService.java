@@ -23,11 +23,4 @@ public interface LoginService {
      */
     List<User> findUsersByUser(User user);
     
-    /**
-     * find users by user
-     * 
-     * @param moduleVO moduleVO
-     * @return moduleVOs
-     */
-    List<ModuleVO> findModulesByModule(ModuleVO moduleVO);
 }

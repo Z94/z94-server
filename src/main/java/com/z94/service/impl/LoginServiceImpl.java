@@ -29,8 +29,5 @@ public class LoginServiceImpl implements LoginService {
         return userMapper.findUsersByUser(user);
     }
     
-    public List<ModuleVO> findModulesByModule(ModuleVO moduleVO) {
-        return userMapper.findModulesByModule(moduleVO);
-    }
     
 }

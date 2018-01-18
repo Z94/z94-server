@@ -25,12 +25,4 @@ public interface UserMapper {
      * @return users
      */
     List<User> findUsersByUser(User user);
-    
-    /**
-     * find moduleVOs by moduleVO
-     * 
-     * @param moduleVO moduleVO
-     * @return moduleVOs
-     */
-    List<ModuleVO> findModulesByModule(ModuleVO moduleVO);
 }

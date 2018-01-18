@@ -45,9 +45,9 @@ public class LoginController {
     @ApiResponses(value = { @ApiResponse(code = 200, message = "success", response = User.class) })
     protected boolean login(User user) {
         System.out.println(user.toString());
-        List<ModuleVO> lst = loginService.findModulesByModule(null);
-        for (ModuleVO moduleVO : lst) {
-            System.out.println(moduleVO.getModuleName());
+        List<User> lst = loginService.findUsersByUser(user);
+        for (User moduleVO : lst) {
+            System.out.println(moduleVO.getAccount());
         }
         return true;
     }
