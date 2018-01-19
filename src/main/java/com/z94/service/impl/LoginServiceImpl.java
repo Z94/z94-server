@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.z94.dao.UserMapper;
-import com.z94.entity.ModuleVO;
 import com.z94.entity.User;
 import com.z94.service.LoginService;
 
@@ -28,6 +27,5 @@ public class LoginServiceImpl implements LoginService {
     public List<User> findUsersByUser(User user) {
         return userMapper.findUsersByUser(user);
     }
-    
     
 }
